@@ -116,7 +116,7 @@ namespace ProjectPenjualan
                 {
                     penjualan.Jenis = "Kredit";
                 }
-                Console.WriteLine("{0},{1},{2},{3},{4},{5}", penjualan.Nota, penjualan.Tanggal, penjualan.Customer, penjualan.Jenis, penjualan.Total);
+                Console.WriteLine("{0},{1},{2},{3},{4}", penjualan.Nota, penjualan.Tanggal, penjualan.Customer, penjualan.Jenis, penjualan.Total);
             }
 
             Console.WriteLine("\nTekan enter untuk kembali ke menu");
