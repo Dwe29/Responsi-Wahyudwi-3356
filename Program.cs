@@ -83,20 +83,20 @@ namespace ProjectPenjualan
         {
             Console.Clear();
             // PERINTAH: lengkapi kode untuk menghapus penjualan dari dalam collection
-            // Penjualan penjualan = new Penjualan();
-            // Console.Write("Nota: ");
-            // int searchedNota = Convert.ToInt32(Console.ReadLine());
+            Penjualan penjualan = new Penjualan();
+            Console.Write("Nota: ");
+            int searchedNota = Convert.ToInt32(Console.ReadLine());
 
-            // int removeIndex = daftarPenjualan.FindIndex(penjualan => penjualan.Nota == searchedNota);
-            // if (removeIndex != -1)
-            // {
-            //     daftarPenjualan.RemoveAt(removeIndex);
-            //     Console.WriteLine("Data Penjualan Berhasil di Hapus");
-            // }
-            // else
-            // {
-            //     Console.WriteLine("Nota Tidak ditemukan");
-            // }
+            int removeIndex = daftarPenjualan.FindIndex(penjualan => penjualan.Nota == searchedNota);
+            if (removeIndex != -1)
+            {
+                daftarPenjualan.RemoveAt(removeIndex);
+                Console.WriteLine("Data Penjualan Berhasil di Hapus");
+            }
+            else
+            {
+                Console.WriteLine("Nota Tidak ditemukan");
+            }
 
             Console.WriteLine("\nTekan ENTER untuk kembali ke menu");
             Console.ReadKey();
